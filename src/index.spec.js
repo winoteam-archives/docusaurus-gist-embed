@@ -13,6 +13,8 @@ describe('Embed gist into documentation', () => {
       md.render(
         'Salut je suis un gist {gist baloran/d1564cf2c60471b3844be86507c29f45}',
       ),
-    ).toBeNull()
+    )
+      .toEqual(`<p>Salut je suis un gist <script src=\"https://gist.github.com/baloran/d1564cf2c60471b3844be86507c29f45.js\" /></p>
+`)
   })
 })

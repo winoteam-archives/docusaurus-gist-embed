@@ -1,5 +1,4 @@
 const parse = md => {
-  console.log(md.src.charCodeAt(md.pos))
   if (md.src.charCodeAt(md.pos) !== 123) {
     return false
   }
@@ -25,7 +24,7 @@ const parse = md => {
 const render = (tokens, idx) => {
   const token = tokens[idx]
 
-  return `<script src="https://gist.github.com/${token.content.gist}" />`
+  return `<script src="https://gist.github.com/${token.content.gist}.js" />`
 }
 
 const embedGist = ctx => {
