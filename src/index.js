@@ -35,7 +35,7 @@ const render = (tokens, idx) => {
     { runScripts: 'dangerously', resources: 'usable' },
   )
 
-  return dom.window.document.documentElement.outerHTML
+  return dom.window.document.getElementsByTagName('BODY')[0].innerHTML
 }
 
 const embedGist = ctx => {
