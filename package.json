@@ -1,6 +1,6 @@
 {
   "name": "@wino/docusaurus-gist-embed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Embed gist into Docusaurus documentationo",
   "files": [
     "lib"
@@ -25,6 +25,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
     "jest": "^23.4.1",
+    "jsdom": "^11.11.0",
     "remarkable": "^1.7.1"
   }
 }

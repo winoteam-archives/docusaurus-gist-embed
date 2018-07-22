@@ -19,3 +19,11 @@ const siteConfig = {
   // …
 }
 ```
+
+## Usage
+
+```markdown
+Que vous soyez une très petite cave ou alors une grande entreprise, la solution Wino est faite pour vous. Elle s'adapte aux structures avec plusieurs points de vente et de multiples caisses, avec des entrepôts de stockage ou encore avec une boutique en ligne. Tous vos flux données de clients, produits et ventes transitent intelligemment entre les outils.
+
+{gist baloran/d1564cf2c60471b3844be86507c29f45}
+```

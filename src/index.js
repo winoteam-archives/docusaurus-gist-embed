@@ -1,3 +1,7 @@
+import jsdom from 'jsdom'
+
+const { JSDOM } = jsdom
+
 const parse = md => {
   if (md.src.charCodeAt(md.pos) !== 123) {
     return false
@@ -24,7 +28,14 @@ const parse = md => {
 const render = (tokens, idx) => {
   const token = tokens[idx]
 
-  return `<script src="https://gist.github.com/${token.content.gist}.js" />`
+  const dom = new JSDOM(
+    `<body><script src="https://gist.github.com/${
+      token.content.gist
+    }.js" /></body>`,
+    { runScripts: 'dangerously', resources: 'usable' },
+  )
+
+  return dom.window.document.documentElement.outerHTML
 }
 
 const embedGist = ctx => {
