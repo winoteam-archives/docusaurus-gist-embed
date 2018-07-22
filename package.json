@@ -1,6 +1,6 @@
 {
   "name": "@wino/docusaurus-gist-embed",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "winoteam/docusaurus-gist-embed",
   "description": "Embed gist into Docusaurus documentationo",
   "files": [
