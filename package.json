@@ -1,0 +1,24 @@
+{
+  "name": "docusaurus-gist-embed",
+  "version": "0.0.1",
+  "description": "Embed gist into Docusaurus documentationo",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "prepublish": "npm run build",
+    "test": "jest --coverage"
+  },
+  "author": "Baloran aka Arnaud Allouis <arnaudallouis@wino.fr>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "jest": "^23.4.1",
+    "remarkable": "^1.7.1"
+  }
+}
